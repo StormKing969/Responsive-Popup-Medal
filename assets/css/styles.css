@@ -56,6 +56,56 @@ img {
   height: auto;
 }
 
+/*=============== SLIDER ===============*/
+.toggle input{
+  display: none;
+}
+
+.toggle {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  width: 50px;
+  height: 40px;
+}
+
+.toggle .theme_number > span{
+  color: var(--title-color);
+  margin: 0 3px;
+}
+
+.slider {
+  position: absolute;
+  top: 21px; 
+  bottom: 0;
+  left: 0; 
+  right: 0;
+  cursor: pointer;
+  background-color: var(--first-color);
+  border-radius: 30px;
+  transition: .4s;
+}
+
+.slider::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background-color: #FFF;
+  transition: .4s;
+}
+
+.move_1::before {
+  transform: translateX(14px);
+}
+
+.move_2::before {
+  transform: translateX(32px);
+}
+
 /*=============== MODAL ===============*/
 .container {
   margin-left: 1rem;
@@ -107,16 +157,19 @@ img {
   padding: 3rem 2rem 2rem;
   border-radius: 1rem 1rem 0 0;
   transition: all .3s;
+}
 
-  /* ==== Effect 1 ==== */
-  transform: translateY(10%);
+.effect_1 {
+  transform: translateY(10%); 
+}
 
-  /* ==== Effect 2 ==== */
-  /* transform: scale(.5) translateY(10%); */
+.effect_2 {
+  transform: scale(.5) translateY(10%);
+}
 
-  /* ==== Effect 3 ==== */
-  /* transform: rotateX(65deg) scale(.75) translateY(10%);
-  transform-origin: 50% 100%; */
+.effect_3 {
+  transform: rotateX(65deg) scale(.75) translateY(10%);
+  transform-origin: 50% 100%;
 }
 
 .modal_img {

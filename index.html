@@ -15,13 +15,23 @@
 </head>
 
 <body>
+    <label class="toggle">
+        <div class="theme_number" id="theme-number">
+            <span class="span_1">1</span>
+            <span class="span_2">2</span>
+            <span class="span_3">3</span>
+        </div>
+
+        <input type="checkbox" class="background_changer" id="background-changer">
+        <span id="slider" class="slider"></span>
+    </label>
     <section class="modal container">
         <button class="modal_button" id="open-modal">
             Open Modal
         </button>
 
         <div class="modal_container" id="modal-container">
-            <div class="modal_content">
+            <div class="modal_content" id="modal-content">
                 <div class="modal_close close-modal" title="Close">
                     <i class='bx bx-x'></i>
                 </div>
